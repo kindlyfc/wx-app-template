@@ -1,0 +1,20 @@
+{
+  "name": "miniprogram-ts-less-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "eslint": "eslint src --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@datawis/utils": "^1.0.2",
+    "@vant/weapp": "^1.10.3"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^2.12.0"
+  },
+  "description": "",
+  "private": true,
+  "entry": {}
+}

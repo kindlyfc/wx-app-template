@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view wx:if="{{useLoginPage}}" class="login-content">
+  <!-- S 登陆方式选择 -->
+  <view class="login-options" wx:if="{{manyWaysForLogin}}">
+    <image class="login-logo" src="../../images/logo.webp" />
+    <van-button size="large" color="#fd9833" bindtap="showPassWord" class="option-one" round type="info">账号密码登录</van-button>
+    <van-button size="large" color="#fd9833" round type="info">手机号快速登录</van-button>
+  </view>
+  <!-- E 登陆方式选择 -->
+
+  <!-- S 账号密码登录 -->
+  <view wx:if="{{(!manyWaysForLogin && usePassword) || showPasswordForm}}">
+    <view class="login-type-name">账号密码登录</view>
+    <form catchsubmit="formSubmit">
+      <input name="account" class="input" placeholder="请输入账号" />
+      <input name="password" class="input" type="password" placeholder="请输入密码" />
+      <view class="btn-area">
+        <van-button round color="#fd9833" size="large" formType="submit">登 录</van-button>
+      </view>
+    </form>
+  </view>
+  <!-- E 账号密码登录 -->
+</view>
